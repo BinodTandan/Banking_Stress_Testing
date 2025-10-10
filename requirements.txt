@@ -1,0 +1,9 @@
+pandas 
+numpy 
+scikit-learn 
+duckdb 
+pyarrow 
+matplotlib 
+lightgbm 
+pandas_datareader
+setuptools

@@ -1,0 +1,64 @@
+
+# --- Data files
+data_raw/
+data_work/
+results/
+*.csv
+*.csv.gz
+*.parquet
+*.zip
+*.xlsx
+
+# --- Python virtual environment
+venv/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.joblib
+*.egg-info/
+dist/
+build/
+
+# --- Jupyter & notebook cache
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+*.out
+*.log
+
+# --- VS Code workspace & settings
+.vscode/
+*.code-workspace
+
+# --- OS and system files
+.DS_Store
+Thumbs.db
+
+# --- Environment and API keys (if any)
+*.env
+secrets.json
+kaggle.json
+
+# --- Temporary exports / reports
+*.pdf
+*.docx
+*.tex
+*.aux
+*.bbl
+*.blg
+*.toc
+*.out
+*.lof
+*.lot
+
+# --- Model artifacts (optional to exclude)
+models/
+*.h5
+*.pt
+*.onnx
+
+# --- Backup / temp files
+*~
+*.bak
