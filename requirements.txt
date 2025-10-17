@@ -2,7 +2,7 @@ pandas
 numpy 
 scikit-learn 
 duckdb 
-pyarrow 
+pyarrow
 matplotlib 
 lightgbm 
 pandas_datareader
