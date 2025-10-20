@@ -8,3 +8,4 @@ lightgbm
 pandas_datareader
 setuptools
 seaborn
+tabulate
