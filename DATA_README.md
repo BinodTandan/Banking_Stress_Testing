@@ -36,10 +36,10 @@ All raw and processed data are stored in the shared Google Drive folder:
 
 | Dataset | Rows | Columns | Time Range | Key Variables | Notes |
 |:---------|------:|------:|:------------|:---------------|:-------|
-| `loans_slim.parquet` | 2,260,701 | 14 | 2007–2018 | loan_amnt, int_rate, term | Cleaned raw data |
+| `loans_slim.parquet` | 2,260,701 | 15 | 2007–2018 | loan_amnt, int_rate, term | Cleaned raw data |
 | `macro_q.parquet` | 48 | 5 | 2007–2018 | GDP, CPI, UNRATE, FEDFUNDS | Quarterly averages |
-| `loans_merged.parquet` | 2,260,668 | 18 | 2007–2018 | Combined borrower + macro data | Merged via issue quarter |
-| `loans_cleaned.parquet` | TBD | TBD | 2007–2018 | EDA-verified dataset | Member A will update |
+| `loans_merged.parquet` | 2,260,668 | 20 | 2007–2018 | Combined borrower + macro data | Merged via issue quarter |
+| `loans_cleaned.parquet` | 2,258,953 | 24 | 2007–2018 | EDA-verified dataset | Load and cleaned merged dataset along with EDA and hypothesis testing |
 | `loans_fe.parquet` | TBD | TBD | 2007–2018 | Derived features | Member B will update |
 
 ---
@@ -97,7 +97,7 @@ All large `.parquet`, `.csv`, and `.zip` files are **excluded from Git** (see `.
 | Stage | Responsible Member |
 |:--------|:------------------|
 | Raw ingestion & macro merge | **Binod** |
-| Data cleaning & EDA | **Member A** |
+| Data cleaning & EDA | **Karthikeya & Binod** |
 | Feature engineering & model prep | **Member B** |
 | Visualization & documentation | **Member C** |
 
@@ -108,7 +108,7 @@ All large `.parquet`, `.csv`, and `.zip` files are **excluded from Git** (see `.
 | Version | Date | Description |
 |:----------|:------|:-------------|
 | v1.0 | 2025-10-08 | Initial setup, ingestion & macro merge completed |
-| v1.1 | — | Cleaned dataset & EDA results added |
+| v1.1 | 2025-10-19 | Cleaned dataset & EDA results added |
 | v1.2 | — | Feature engineering completed |
 | v1.3 | — | Modeling & stress-testing results added |
 
@@ -122,7 +122,7 @@ Only **textual summaries** (no screenshots or plots) should be added.
 | Date | Member | File(s) Updated | Description of Change | Rows / Columns | Notes |
 |:------|:--------|:----------------|:-----------------------|---------------:|:-------|
 | 2025-10-08 | Binod | loans_merged.parquet | Completed macro merge and ingestion scripts | 2 260 668 / 18 | Added GDP, CPI, UNRATE, FEDFUNDS |
-| YYYY-MM-DD | Member A | loans_cleaned.parquet | Cleaned dataset and removed nulls | 2 153 420 / 16 | Added EDA summary |
+| 2025-10-27 | Binod & Karthikeya | loans_cleaned.parquet | Cleaned dataset and removed nulls | 2,258,953 / 24 | Added EDA summary |
 | YYYY-MM-DD | Member B | loans_fe.parquet | Added engineered features (ratios, macro deltas) | 2 153 420 / 22 | Ready for model input |
 | YYYY-MM-DD | Member C | model_metrics.csv | Added baseline model metrics and plots | — | Included ROC & PR curves |
 | YYYY-MM-DD | Binod | stress_scenarios.parquet | Added synthetic macro scenarios from VAE model | — | Prepared for GenAI stress testing |
