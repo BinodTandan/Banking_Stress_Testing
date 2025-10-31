@@ -40,7 +40,7 @@ All raw and processed data are stored in the shared Google Drive folder:
 | `macro_q.parquet` | 48 | 5 | 2007–2018 | GDP, CPI, UNRATE, FEDFUNDS | Quarterly averages |
 | `loans_merged.parquet` | 2,260,668 | 20 | 2007–2018 | Combined borrower + macro data | Merged via issue quarter |
 | `loans_cleaned.parquet` | 2,258,953 | 20 | 2007–2018 | EDA-verified dataset | Load and cleaned merged dataset along with EDA and hypothesis testing |
-| `loans_fe.parquet` | TBD | TBD | 2007–2018 | Derived features | Member B will update |
+| `loans_fe.parquet` | 2,258,953 | 29 | 2007–2018 | Derived features | Member B will update | Performed feature transform, feature construction and feature selection
 
 ---
 
@@ -98,7 +98,7 @@ All large `.parquet`, `.csv`, and `.zip` files are **excluded from Git** (see `.
 |:--------|:------------------|
 | Raw ingestion & macro merge | **Binod** |
 | Data cleaning & EDA | **Karthikeya & Binod** |
-| Feature engineering & model prep | **Member B** |
+| Feature engineering & model prep | **Rutuja & Binod** |
 | Visualization & documentation | **Member C** |
 
 ---
@@ -109,7 +109,7 @@ All large `.parquet`, `.csv`, and `.zip` files are **excluded from Git** (see `.
 |:----------|:------|:-------------|
 | v1.0 | 2025-10-08 | Initial setup, ingestion & macro merge completed |
 | v1.1 | 2025-10-19 | Cleaned dataset & EDA results added |
-| v1.2 | — | Feature engineering completed |
+| v1.2 | 2025-10-28 | Feature engineering completed |
 | v1.3 | — | Modeling & stress-testing results added |
 
 ---
@@ -122,8 +122,8 @@ Only **textual summaries** (no screenshots or plots) should be added.
 | Date | Member | File(s) Updated | Description of Change | Rows / Columns | Notes |
 |:------|:--------|:----------------|:-----------------------|---------------:|:-------|
 | 2025-10-08 | Binod | loans_merged.parquet | Completed macro merge and ingestion scripts | 2 260 668 / 18 | Added GDP, CPI, UNRATE, FEDFUNDS |
-| 2025-10-27 | Binod & Karthikeya | loans_cleaned.parquet | Cleaned dataset and removed nulls | 2,258,953 / 24 | Added EDA summary |
-| YYYY-MM-DD | Member B | loans_fe.parquet | Added engineered features (ratios, macro deltas) | 2 153 420 / 22 | Ready for model input |
+| 2025-10-19 | Binod & Karthikeya | loans_cleaned.parquet | Cleaned dataset and removed nulls | 2,258,953 / 24 | Added EDA summary |
+| 2025-10-28| Binod & Rutuja | loans_fe.parquet | Added engineered features (ratios, macro deltas) | 2,258,953 / 29 | Ready for model input |
 | YYYY-MM-DD | Member C | model_metrics.csv | Added baseline model metrics and plots | — | Included ROC & PR curves |
 | YYYY-MM-DD | Binod | stress_scenarios.parquet | Added synthetic macro scenarios from VAE model | — | Prepared for GenAI stress testing |
  
