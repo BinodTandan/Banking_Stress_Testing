@@ -39,7 +39,7 @@ All raw and processed data are stored in the shared Google Drive folder:
 | `loans_slim.parquet` | 2,260,701 | 15 | 2007–2018 | loan_amnt, int_rate, term | Cleaned raw data |
 | `macro_q.parquet` | 48 | 5 | 2007–2018 | GDP, CPI, UNRATE, FEDFUNDS | Quarterly averages |
 | `loans_merged.parquet` | 2,260,668 | 20 | 2007–2018 | Combined borrower + macro data | Merged via issue quarter |
-| `loans_cleaned.parquet` | 2,258,953 | 24 | 2007–2018 | EDA-verified dataset | Load and cleaned merged dataset along with EDA and hypothesis testing |
+| `loans_cleaned.parquet` | 2,258,953 | 20 | 2007–2018 | EDA-verified dataset | Load and cleaned merged dataset along with EDA and hypothesis testing |
 | `loans_fe.parquet` | TBD | TBD | 2007–2018 | Derived features | Member B will update |
 
 ---
