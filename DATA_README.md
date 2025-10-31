@@ -40,7 +40,7 @@ All raw and processed data are stored in the shared Google Drive folder:
 | `macro_q.parquet` | 48 | 5 | 2007–2018 | GDP, CPI, UNRATE, FEDFUNDS | Quarterly averages |
 | `loans_merged.parquet` | 2,260,668 | 20 | 2007–2018 | Combined borrower + macro data | Merged via issue quarter |
 | `loans_cleaned.parquet` | 2,258,953 | 20 | 2007–2018 | EDA-verified dataset | Load and cleaned merged dataset along with EDA and hypothesis testing |
-| `loans_fe.parquet` | 2,258,953 | 29 | 2007–2018 | Derived features | Member B will update | Performed feature transform, feature construction and feature selection
+| `loans_fe.parquet` | 2,258,953 | 29 | 2007–2018 | Derived features | Performed feature transformation, feature construction and feature selection
 
 ---
 
