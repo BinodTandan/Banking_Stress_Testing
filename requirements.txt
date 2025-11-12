@@ -9,3 +9,4 @@ pandas_datareader
 setuptools
 seaborn
 tabulate
+xgboost==2.0.3
