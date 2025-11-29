@@ -9,8 +9,5 @@ pandas_datareader
 setuptools
 seaborn
 tabulate
-<<<<<<< Updated upstream
 xgboost==2.0.3
-=======
 torch
->>>>>>> Stashed changes
