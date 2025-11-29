@@ -124,5 +124,5 @@ All raw data files are stored in the shared Google Drive folder and are excluded
 | **Binod Tandan** | Team Lead, Pipeline Setup, Macro-Merge, GenAI Integration |
 | **Karthikeya Reddy Bonuga** | Data Cleaning, EDA, Statistical Testing |
 | **Rutuja Jadhav** | Feature Engineering, Model Training |
-| **Karthikeya Reddy Bonuga** | Visualization, Reporting, Documentation |
+| **Vasanthi Thurumella** | Visualization, Reporting, Documentation |
 
