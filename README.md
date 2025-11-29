@@ -50,10 +50,12 @@ ai_stress_testing/
 │ ├── 02_feature_engineering.ipynb
 │ ├── 03_model_training.ipynb
 │ ├── 04_stress_testing.ipynb
-│ └── 05_genAI_scenarios.ipynb
+  ├── 05_genAI_scenarios.ipynb
+│ └── 06_prepare_llm_scenario.ipynb
 │
 ├── src/
 │ ├── ingest.py # Large-file ingestion in chunks
+  ├── llm_narratives.py
 │ ├── merge_macro.py # Macro data integration (FRED)
 │ ├── train_model.py # Credit risk model training
 │ └── stress_genai.py # Generative stress scenario generation
@@ -108,10 +110,10 @@ All raw data files are stored in the shared Google Drive folder and are excluded
 
 | Category | Algorithm / Model | Purpose |
 |:-----------|:------------------|:----------|
-| **Baseline Credit Risk** | Logistic Regression, XGBoost, LSTM | Predict loan default (PD) |
-| **Generative Modeling** | VAE, GAN, Diffusion | Generate synthetic macroeconomic scenarios |
-| **LLM Narrative Generation** | GPT-4, FinBERT, BloombergGPT | Create textual stress-test narratives |
-| **Evaluation Metrics** | Wasserstein distance, AUC, cluster diversity | Compare realism and coverage |
+| **Baseline Credit Risk** | Logistic Regression, XGBoost | Predict loan default (PD) |
+| **Generative Modeling** | VAE | Generate synthetic macroeconomic scenarios |
+| **LLM Narrative Generation** | OpenAI | Create textual stress-test narratives |
+| **Evaluation Metrics** | AUC, cluster diversity | Compare realism and coverage |
 
 ---
 
@@ -120,7 +122,7 @@ All raw data files are stored in the shared Google Drive folder and are excluded
 | Member | Responsibility |
 |:--------|:----------------|
 | **Binod Tandan** | Team Lead, Pipeline Setup, Macro-Merge, GenAI Integration |
-| **Member A** | Data Cleaning, EDA, Statistical Testing |
-| **Member B** | Feature Engineering, Model Training |
-| **Member C** | Visualization, Reporting, Documentation |
+| **Karthikeya Reddy Bonuga** | Data Cleaning, EDA, Statistical Testing |
+| **Rutuja Jadhav** | Feature Engineering, Model Training |
+| **Karthikeya Reddy Bonuga** | Visualization, Reporting, Documentation |
 
