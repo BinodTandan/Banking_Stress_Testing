@@ -11,9 +11,6 @@ seaborn
 tabulate
 xgboost==2.0.3
 torch
-<<<<<<< HEAD
-=======
 langchain
 langchain-openai
 dotenv
->>>>>>> cde6e615b2a0860d359e20881ec71fb716efa2f4
